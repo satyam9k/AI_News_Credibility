@@ -1,0 +1,9 @@
+google-generativeai
+requests
+easyocr
+langdetect
+translate
+beautifulsoup4
+google-api-python-client
+python-dotenv
+streamlit
