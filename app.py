@@ -319,7 +319,7 @@ def main():
     if input_method in ["Image", "Both"]:
         uploaded_image = st.file_uploader("Upload an image containing news content:", type=["jpg", "jpeg", "png"])
         if uploaded_image is not None:
-            st.image(uploaded_image, caption="Uploaded Image", use_column_width=True)
+            st.image(uploaded_image, caption="Uploaded Image", use_container_width=True)
 
     with st.expander("Advanced Options"):
         st.write("Custom Trusted Sources:")
