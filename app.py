@@ -18,14 +18,17 @@ from googleapiclient.discovery import build
 from dotenv import load_dotenv
 import os
 
-#environment variables from .env file
-load_dotenv()
+# #environment variables from .env file
+# load_dotenv()
 
-# API keys from environment variables
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")  
-GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID")  
-
+# # API keys from environment variables
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")  
+# GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID")  
+#environment variables from streamlit secrets
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+GOOGLE_CSE_ID = st.secrets["GOOGLE_CSE_ID"]
 # configure the app for streamlit
 st.set_page_config(
     page_title="News Credibility Verifier",
