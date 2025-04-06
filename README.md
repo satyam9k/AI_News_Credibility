@@ -68,7 +68,7 @@ This application requires three API keys:
 1.  **Clone the Repository:**
     ```bash
     git clone https://github.com/satyam9k/Hackathon_AI_News_Credibility.git
-    cd AI-Powered-News-Credibility-Verification-System
+    cd Hackathon_AI_News_Credibility
     ```
 
 2.  **Create a Virtual Environment (Recommended):**
